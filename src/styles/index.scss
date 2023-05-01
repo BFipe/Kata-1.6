@@ -1,0 +1,7 @@
+$back: red;
+$text: blue;
+
+body{
+    background: linear-gradient( $back ,rgb(255, 255, 255)) no-repeat;
+    color: $text;
+}
