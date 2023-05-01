@@ -24,20 +24,20 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     "css-loader",
-                    "sass-loader",
                     {
                         loader: "postcss-loader",
                         options: {
                             postcssOptions: {
                                 plugins: [
                                     [
-                                        postcssPresetEnv(),
-                                        autoprefixer(),
+                                        postcssPresetEnv,
+                                        autoprefixer,
                                     ],
                                 ],
                             },
                         },
                     },
+                    "sass-loader",
                 ],
             },
         ],
@@ -49,7 +49,6 @@ module.exports = {
         filename: "[name].[contenthash].js",
     },
     plugins: [
-        autoprefixer,
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'index.html')
         }),
