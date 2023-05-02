@@ -75,6 +75,8 @@
   
   a {
     background-color: transparent;
+    text-decoration: none;
+    color: black;
   }
   
   /**
@@ -166,6 +168,9 @@
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
+    background-color: transparent;
+    outline: none;
+    border: none;
   }
   
   /**
