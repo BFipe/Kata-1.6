@@ -3,6 +3,14 @@ body{
     font-family: "TTLakes";
 }
 
+.content-container{
+    display: flex;
+
+    @media screen and (max-width: $laptop-screen) {
+        display: block;
+    }
+}
+
 .main-container{
     max-width: 1360px;
     margin: 0 auto;
