@@ -1,0 +1,135 @@
+@import "../../default/variables.scss";
+
+.header {
+  display: none;
+  width: auto;
+  align-items: center;
+  background-color: #ffffff;
+
+  @media screen and (max-width: $laptop-screen) {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 10px #d9fff5;
+  }
+
+  @media screen and (max-width: $mobile-screen) {
+    display: flex;
+    justify-content: space-between;
+
+    &__call,
+    &__chat,
+    &__profile {
+      display: none;
+    }
+  }
+
+  &__left {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media screen and (max-width: $laptop-screen) {
+      width: 232px;
+
+      &::after {
+        content: "";
+        background-color: #eaeaea;
+        width: 2px;
+        border-radius: 1px;
+        height: 32px;
+        position: fixed;
+        left: 88px;
+      }
+    }
+
+    @media screen and (max-width: $mobile-screen) {
+      width: 175px;
+      padding-left: 8px;
+
+      &::after {
+        content: "";
+        position: relative;
+        background-color: #eaeaea;
+        width: 2px;
+        border-radius: 1px;
+        height: 32px;
+        left: 0px;
+      }
+    }
+  }
+
+  &__logo {
+    width: 100px;
+    height: 50px;
+  }
+
+  &__burger {
+    align-self: flex-end;
+  }
+
+  &__right {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px 0;
+
+    @media screen and (max-width: $laptop-screen) {
+      width: 320px;
+      align-items: center;
+
+      &::after {
+        content: "";
+        background-color: #eaeaea;
+        width: 2px;
+        border-radius: 1px;
+        height: 32px;
+        position: fixed;
+        right: 128px;
+      }
+    }
+
+    @media screen and (max-width: $mobile-screen) {
+      display: flex;
+      width: 132px;
+      margin-left: auto;
+      align-items: center;
+
+      &::after {
+        content: "";
+        display: none;
+      }
+    }
+  }
+}
+
+.button {
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: #ffffff00;
+  text-decoration: none;
+  margin: auto 0;
+
+  &:focus {
+    border-radius: 50%;
+    outline: 2px solid #431724;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  svg:hover {
+    cursor: pointer;
+  }
+
+  svg:hover rect {
+    fill: #a83b5b;
+  }
+}
