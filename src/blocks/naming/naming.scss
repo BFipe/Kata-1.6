@@ -1,0 +1,84 @@
+@import "../../default/variables.scss";
+
+.naming {
+  display: flex;
+  margin-top: 18px;
+
+  @media screen and (max-width: $laptop-screen) {
+    margin-top: 8px;
+  }
+
+  &__title {
+    font-family: "TTLakes";
+    font-weight: 600;
+    font-size: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &::before {
+      content: "";
+      background-color: #41f6d6;
+      width: 8px;
+      height: 40px;
+      position: absolute;
+      left: -4px;
+      transform: translateY(-6px);
+      border-radius: 4px;
+    }
+  }
+
+  &__functions {
+    margin-left: auto;
+  }
+
+  .functions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: $laptop-screen) {
+      display: none;
+    }
+
+    &__block {
+      display: flex;
+      margin-left: 32px;
+    }
+
+    &__function-name {
+      margin-right: 8px;
+      font-size: 20px;
+    }
+  }
+}
+
+.button-max-screen {
+  display: flex;
+  border: none;
+  background-color: #ffffff00;
+  text-decoration: none;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-family: "TTLakes";
+  font-size: 20px;
+
+  svg {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+
+  &:focus {
+    outline: solid 2px #b8ffec;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

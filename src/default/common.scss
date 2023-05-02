@@ -1,0 +1,15 @@
+.main-container{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 32px;
+
+    @media screen and (max-width: $laptop-screen) {
+        max-width: 900px;
+        padding: 0 16px;
+    }
+
+    @media screen and (max-width: $mobile-screen) {
+        width: auto;
+        padding: 0 16px;
+    }
+}
