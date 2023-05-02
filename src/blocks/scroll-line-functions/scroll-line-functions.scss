@@ -1,0 +1,57 @@
+.scroll-line {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "TTLakes";
+
+  @media screen and (max-width: $laptop-screen) {
+    padding: 10px;
+    flex-wrap: nowrap;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(to left, #ffffff00 20%, #f8f8f8);
+      height: 42px;
+      width: 15px;
+      left: 15px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(to left, #f8f8f8 20%, #ffffff00);
+      height: 42px;
+      width: 15px;
+      right: 10px;
+    }
+  }
+
+  &__info {
+    padding: 4px 20px;
+    margin: 4px 0;
+    white-space: nowrap;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #7e7e82;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: #2e2e2e;
+    }
+
+    &:focus {
+      outline: solid 2px #b8ffec;
+      border-radius: 10px;
+      background-color: #ffffff;
+    }
+  }
+}
