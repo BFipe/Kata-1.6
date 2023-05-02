@@ -7,6 +7,7 @@
   left: 0;
   z-index: 2;
   box-shadow: none;
+  transition: transform 0.2s ease-in-out;
 
   &__overlay {
     display: none;
@@ -18,13 +19,14 @@
       height: 100vh;
       bottom: 0;
       transform: translateX(320px);
-      display: block;
-      transition: 0.5s ease-out;
+      transition: 0.2s 0.3s ease-out;
     }
-
+    
     &.active {
+      display: block;
       background-color: #ffffff80;
     }
+    
   }
 
   @media screen and (max-width: $laptop-screen) {
@@ -34,6 +36,7 @@
     
     &.disabled{
         transform: translateX(-320px);
+        box-shadow: none;
     }
   }
 
