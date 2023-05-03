@@ -1,5 +1,5 @@
-const logos = document.querySelectorAll('.brand-showcase .swiper-slide');
-const button = document.querySelector('#show_more_brands');
+const logos = document.querySelectorAll('.services-showcase .swiper-slide');
+const button = document.querySelector('#show_more_services');
 let buttonActive = false;
 
 let midscreen;
@@ -26,9 +26,9 @@ function hideContent(isButton) {
     midscreen = window.innerWidth > 760 && window.innerWidth <= 1440;
 
     if (window.innerWidth > 760 && window.innerWidth < 1440) {
-      hideByNumber(6, logos);
+      hideByNumber(3, logos);
     } else if (window.innerWidth >= 1440) {
-      hideByNumber(8, logos);
+      hideByNumber(4, logos);
     }
   } else {
     showAll(logos);

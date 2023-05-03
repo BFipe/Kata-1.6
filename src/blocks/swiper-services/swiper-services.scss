@@ -1,10 +1,14 @@
+.swiper-services{
+    text-align: start;
+}
+
 @import url("./blocks/scroller/swiper.min.css");
 
 :root {
   --swiper-theme-color: #b5b6bc;
 }
 
-.brand-showcase {
+.services-showcase {
   margin-top: 15px;
 
   .swiper {
@@ -94,13 +98,20 @@
       background: #ffffff;
       display: flex;
       width: 240px;
-      height: 72px;
+      height: 160px;
       border-radius: 10px;
       border: 1px solid #eaeaea;
       box-sizing: border-box;
-      padding: 0px 16px;
+      padding: 16px;
       justify-content: space-between;
       align-items: center;
+      text-align: start;
+
+      p{
+        font-size: 16px;
+        margin: 0;
+        align-self: flex-start;
+      }
     }
 
     &__image {
@@ -119,6 +130,7 @@
       border: none;
       background: none;
       transition: all 0.33s ease-in-out;
+      align-self: flex-end;
 
       svg {
         min-width: 40px;
@@ -145,7 +157,7 @@
     display: none;
   }
 
-  .swiper-brands {
+  .swiper-services {
     display: flex;
     flex-direction: column;
     width: 1056px;
@@ -176,7 +188,7 @@
   }
 
   @media screen and (max-width: $desktop-screen) {
-    .swiper-brands {
+    .swiper-services {
       width: 720px;
     }
 
@@ -190,7 +202,7 @@
   }
 
   @media screen and (max-width: 760px) {
-    .swiper-brands {
+    .swiper-services {
       display: block;
     }
 
@@ -202,7 +214,7 @@
       min-width: 240px;
     }
 
-    .swiper-brands {
+    .swiper-services {
       &::before {
         content: "";
         position: absolute;
@@ -236,7 +248,7 @@
       gap: 0;
     }
 
-    .swiper-brands {
+    .swiper-services {
       width: auto;
     }
   }

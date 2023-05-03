@@ -2,7 +2,6 @@
   background-color: #ffffff;
   width: 306px;
   flex-shrink: 0;
-  height: 100vh;
   position: static;
   left: 0;
   z-index: 2;
@@ -32,6 +31,7 @@
   @media screen and (max-width: $laptop-screen) {
     position: fixed;
     width: 320px;
+    height: 100vh;
     box-shadow: -15px 0px 30px 30px rgba(0, 0, 0, 0.2);
     
     &.disabled{
@@ -133,7 +133,13 @@
 }
 
 .sidebar__footer {
-  margin-top: auto;
+  margin-top: 0;
+  margin: auto 0;
+
+  @media screen and (max-width: $laptop-screen) {
+    margin: 0;
+    margin-top: auto; 
+  }
 }
 
 .sidebar-footer {

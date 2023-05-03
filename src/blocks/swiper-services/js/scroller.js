@@ -4,7 +4,7 @@
 
 let swiper;
 let init = false;
-const pagination = document.querySelector('.swiper-brands .swiper-pagination');
+const pagination = document.querySelector('.swiper-services .swiper-pagination');
 function swiperCard() {
   if (window.innerWidth <= 760) {
     if (!init) {
@@ -12,7 +12,7 @@ function swiperCard() {
 
       init = true;
 
-      swiper = new Swiper('.swiper-brands', {
+      swiper = new Swiper('.swiper-services', {
         autoplay: {
           delay: 3000,
           disableOnInteraction: false,
