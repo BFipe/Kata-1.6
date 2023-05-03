@@ -179,7 +179,7 @@
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: $laptop-screen) {
+@media screen and (max-width: $desktop-screen) {
   .swiper-brands {
     width: 720px;
   }

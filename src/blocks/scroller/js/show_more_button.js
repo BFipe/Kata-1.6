@@ -23,11 +23,11 @@ button.addEventListener('click', () => {
 
 function hideContent(isButton) {
   if ((!buttonActive || isButton) && window.innerWidth > 760) {
-    midscreen = window.innerWidth > 760 && window.innerWidth <= 1110;
+    midscreen = window.innerWidth > 760 && window.innerWidth <= 1440;
 
-    if (window.innerWidth > 760 && window.innerWidth < 1110) {
+    if (window.innerWidth > 760 && window.innerWidth < 1440) {
       hideByNumber(6, logos);
-    } else if (window.innerWidth >= 1110) {
+    } else if (window.innerWidth >= 1440) {
       hideByNumber(8, logos);
     }
   } else {
