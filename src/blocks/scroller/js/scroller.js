@@ -1,12 +1,12 @@
   // core version + navigation, pagination modules:
-  import Swiper, { Navigation, Pagination } from 'swiper';
+  import Swiper from 'swiper/bundle';
   // import Swiper and modules styles
 
 let swiper;
 let init = false;
 const pagination = document.querySelector('.swiper-pagination');
 function swiperCard() {
-  if (window.innerWidth <= 575) {
+  if (window.innerWidth <= 760) {
     if (!init) {
       pagination.classList.remove('hidden');
 
@@ -37,6 +37,10 @@ function swiperCard() {
             slidesPerView: 2,
             spaceBetween: 195,
           },
+          595:{
+            slidesPerView: 3,
+            spaceBetween: 195,
+          }
         },
       });
     }
