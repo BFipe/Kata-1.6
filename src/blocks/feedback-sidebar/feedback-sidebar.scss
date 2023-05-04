@@ -89,17 +89,6 @@
     text-align: start;
     box-sizing: border-box;
 
-    &--name {
-      // box-sizing: border-box;
-      // outline: 1px #DDDDDD;
-    }
-
-    &--tel {
-    }
-
-    &--email {
-    }
-
     &--message {
         margin-bottom: 0;
         padding: 16px;
@@ -137,6 +126,7 @@
     color: #ffffff;
     padding-left: 15px;
     box-shadow: black 0 0 0;
+    margin-left: auto;
 
     &::after{
         content: "";
