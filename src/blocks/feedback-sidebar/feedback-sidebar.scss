@@ -9,8 +9,10 @@
 
   padding: 32px;
   background-color: #ffffff;
+  box-shadow: 15px 0px 30px 30px rgba(0, 0, 0, 0.2);
 
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, 
+  box-shadow 0.2s ease-in-out;
   .feedback-container {
     display: flex;
     flex-direction: column;
@@ -23,10 +25,11 @@
   }
 
   &.disabled {
+    box-shadow: none;
     transform: translateX(450px);
 
     @media screen and (max-width: $mobile-screen) {
-      transform: translateX(100vw);
+      transform: translateX(110vw);
     }
 
     .feedback__close-button {
