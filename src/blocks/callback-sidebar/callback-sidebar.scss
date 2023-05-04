@@ -1,6 +1,6 @@
 .callback-sidebar {
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     right: 0;
     box-sizing: border-box;
   
@@ -46,6 +46,17 @@
   
       @media screen and (max-width: $mobile-screen) {
         transform: translateX(0);
+      }
+
+      &::hover{
+        cursor: pointer;
+      }
+
+      &:active{
+        path{
+          transform: scale(1.2);
+          transform-origin: center center;
+        }
       }
     }
   

@@ -1,6 +1,6 @@
 .feedback-sidebar {
   position: fixed;
-  z-index: 3;
+  z-index: 5;
   right: 0;
   box-sizing: border-box;
 
@@ -43,6 +43,19 @@
     transform: translate(-90px, 16px);
     transition: transform 0.3s ease-in-out;
     padding: 0;
+
+    &:hover{
+      cursor: pointer;
+    }
+
+    &:active{
+      
+      path {
+        transform-origin: center center;
+        transform: scale(1.2);
+        transition: scale 0.2s ease-in-out;
+      }
+    }
 
     @media screen and (max-width: $mobile-screen) {
       transform: translateX(0);

@@ -1,0 +1,18 @@
+.sidebar-overlay{
+    position: fixed;
+    width: 110vw;
+    height: 110vh;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+
+    &.disabled{
+        display: none;
+    }
+
+    @media screen and (max-width: $mobile-screen) {
+        display: none;
+    }
+}
