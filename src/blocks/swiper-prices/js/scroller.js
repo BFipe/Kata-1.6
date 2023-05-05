@@ -13,10 +13,10 @@ function swiperCard() {
       init = true;
 
       swiper = new Swiper('.swiper-prices', {
-        // autoplay: {
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
         direction: 'horizontal',
         slidesPerView: 2,
         centeredSlides: true,
