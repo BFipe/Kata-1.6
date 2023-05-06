@@ -72,13 +72,15 @@ $tbody-border: 10px;
                 content: "";
                 display: block;
                 position: absolute;
-    
-                width: 95%;
+                width: 65%;
+                left: 360px;
                 height: 1px;
                 background-color: #EAEAEA;
     
-                transform: translate(-103%, 0px);
-                
+                @media screen and (max-width: $laptop-screen){
+                    width: 90%;
+                    left: 40px;
+                }
             }
 
             &:first-child{
