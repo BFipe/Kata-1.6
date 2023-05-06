@@ -99,6 +99,7 @@
       color: #ffffff;
       text-transform: uppercase;
       transform: translate(105px, 133px);
+      
 
       &::after{
         content: "";
@@ -107,7 +108,22 @@
         width: 7px;
         height: 10px;
         background: url('./blocks/swiper-prices/img/dropdown.svg') no-repeat center center;
-        transform: translate(85px, -13px);
+        transform: translate(85px, -13px) scale(1);
+        transition: all 0.1s ease-in-out;
+      }
+
+      &:hover{
+        background-color: #cd305f;
+        cursor: pointer;
+      }
+
+      &:active{
+        
+        &::after{
+          content: "";
+          transition: all 0.1s ease-in-out;
+          transform: translate(85px, -13px) scale(1.5);
+        }
       }
     }
   }
@@ -165,7 +181,6 @@
   }
 
   .swiper-container {
-    padding: 0 16px;
     display: block;
   }
 
@@ -181,7 +196,7 @@
   display: none;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: $mobile-scroller-screen) {
   .swiper-prices {
     display: block;
   }
