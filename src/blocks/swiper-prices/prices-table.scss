@@ -1,4 +1,4 @@
-$tbody-border: 25px;
+$tbody-border: 10px;
 
 .prices-table {
     text-align: start;
@@ -56,11 +56,7 @@ $tbody-border: 25px;
         }
     }
 
-    th{
-        padding: 24px;
-    }
-
-    td{
+    th, td{
         font-weight: 200;
         font-size: 14px;
         padding: 24px;
@@ -70,6 +66,27 @@ $tbody-border: 25px;
         background-color: #ffffff;
         border-radius: 6px;
         border: 1px solid red;
+
+        tr{
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+    
+                width: 95%;
+                height: 1px;
+                background-color: #EAEAEA;
+    
+                transform: translate(-103%, 0px);
+                
+            }
+
+            &:first-child{
+                &::after{
+                    display: none; 
+                }
+            }
+        }
     }
 
     tbody tr:first-child td:first-child {
