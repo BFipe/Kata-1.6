@@ -199,5 +199,27 @@
 @media screen and (max-width: $mobile-scroller-screen) {
   .swiper-prices {
     display: block;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 205px;
+      width: 20px;
+      background-image: linear-gradient(to right, #f8f8f8, #f8f8f800);
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 205px;
+      width: 20px;
+      background-image: linear-gradient(to left, #f8f8f8, #f8f8f800);
+      right: 0;
+      top: 0;
+      z-index: 2;
+    }
   }
 }

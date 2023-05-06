@@ -4,9 +4,7 @@
     align-items: center;
     text-align: center;
     white-space: break-spaces;
-    margin-top: 40px;
-
-    
+    margin-top: 40px; 
     p{
         color: #7E7E82;
         margin: 0;
@@ -36,8 +34,7 @@
     @media screen and (max-width: $mobile-screen) {
         flex-direction: column;
         
-        p{
-            
+        p{ 
             &:first-child, 
             &:last-child{
                 text-align: center;
