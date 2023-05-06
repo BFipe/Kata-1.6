@@ -17,7 +17,7 @@
     margin: 0 auto;
 
     &__header {
-      background-color: #fcfcfc;
+      background-color: $swiper-header-color;
       margin-bottom: 16px;
     }
 
@@ -32,7 +32,7 @@
       padding: 16px 0;
       color: #7e7e82;
       text-transform: uppercase;
-      box-shadow: white 50vw 0px, white -50vw 0px;
+      box-shadow: $swiper-header-color 50vw 0px, $swiper-header-color -50vw 0px;
     }
 
     &__show-more-button {
