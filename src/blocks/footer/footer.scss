@@ -1,0 +1,47 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    white-space: break-spaces;
+    margin-top: 40px;
+
+    
+    p{
+        color: #7E7E82;
+        margin: 0;
+        margin-bottom: 16px;
+        
+        &:first-child{
+            text-align: left;
+        }
+        
+        &:last-child{
+            text-align: right;
+        }
+        
+        a{
+            color: #7E7E82;
+            
+            &:hover{
+                color: black;
+            }
+            
+            &:focus{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @media screen and (max-width: $mobile-screen) {
+        flex-direction: column;
+        
+        p{
+            
+            &:first-child, 
+            &:last-child{
+                text-align: center;
+            }
+        }
+    }
+}

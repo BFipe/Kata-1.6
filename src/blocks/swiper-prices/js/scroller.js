@@ -37,7 +37,7 @@ function swiperCard() {
             slidesPerView: 2,
             spaceBetween: 195,
           },
-          640:{
+          610:{
             slidesPerView: 2,
             spaceBetween: 20,
           }
