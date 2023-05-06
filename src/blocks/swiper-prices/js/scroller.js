@@ -38,8 +38,8 @@ function swiperCard() {
             spaceBetween: 195,
           },
           640:{
-            slidesPerView: 3,
-            spaceBetween: 220,
+            slidesPerView: 2,
+            spaceBetween: 20,
           }
         },
       });
