@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>1.6 KataAcademy</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" >
 </head>
 
 <body>
@@ -89,7 +89,7 @@
 
         <div class="sidebar__footer sidebar-footer">
           <div class="sidebar-footer__buttons footer-buttons">
-            <button class="button footer-buttons__button" id="callback-open">
+            <button class="button footer-buttons__button callback-open">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="40" height="40" rx="20" fill="#FF3E79" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -97,7 +97,7 @@
                   fill="white" />
               </svg>
             </button>
-            <button class="button footer-buttons__button" id="feedback-open">
+            <button class="button footer-buttons__button feedback-open">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="40" height="40" rx="20" fill="#FF3E79" />
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -146,7 +146,7 @@
 
     <div class="feedback-sidebar disabled">
       <div class="feedback-container feedback">
-        <button id="feedback-close" class="feedback__close-button" id="feedback-close">
+        <button class="feedback__close-button" id="feedback-close">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="40" height="40" rx="20" fill="#FF3E79" />
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -157,14 +157,14 @@
         <h1 class="feedback__header">
           Обратная связь
         </h1>
-        <form action="" class="feedback__form feedback-form">
+        <form action="post" class="feedback__form feedback-form">
           <input type="text" class="feedback-form__input feedback-form__input--name" name="name" id="feedback_name"
-            placeholder="Имя"></input>
+            placeholder="Имя">
           <input type="tel" class="feedback-form__input feedback-form__input--tel" name="tel" id="feedback_tel"
-            placeholder="Телефон"></input>
+            placeholder="Телефон">
           <input type="email" class="feedback-form__input feedback-form__input--email" name="email" id="feedback_email"
-            placeholder="Электронная почта"></input>
-          <textarea type="text" class="feedback-form__input feedback-form__input--message" name="message"
+            placeholder="Электронная почта">
+          <textarea class="feedback-form__input feedback-form__input--message" name="message"
             id="feedback_message" placeholder="Сообщение"></textarea>
           <p class="feedback-form__assignment">Нажимая “отправить”, вы даете согласие на <a href="#"
               class="feedback-form__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#"
@@ -176,7 +176,7 @@
 
     <div class="callback-sidebar disabled">
       <div class="callback-container callback">
-        <button id="callback-close" class="callback__close-button" id="callback-close">
+        <button class="callback__close-button" id="callback-close">
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="40" height="40" rx="20" fill="#FF3E79" />
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -187,9 +187,9 @@
         <h1 class="callback__header">
           Заказать звонок
         </h1>
-        <form action="" class="callback__form callback-form">
+        <form action="post" class="callback__form callback-form">
           <input type="tel" class="callback-form__input callback-form__input--tel" name="tel" id="callback_tel"
-            placeholder="Телефон"></input>
+            placeholder="Телефон">
           <p class="callback-form__assignment">Нажимая “отправить”, вы даете согласие на <a href="#"
               class="callback-form__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#"
               class="callback-form__link">политикой конфиденциальности</a></p>
@@ -239,7 +239,7 @@
           </svg>
         </div>
         <div class="header__right">
-          <button class="button header__call" id="callback-open">
+          <button class="button header__call callback-open">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="40" height="40" rx="20" fill="#FF3E79" />
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -247,7 +247,7 @@
                 fill="white" />
             </svg>
           </button>
-          <button class="button header__chat" id="feedback-open">
+          <button class="button header__chat feedback-open">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="40" height="40" rx="20" fill="#FF3E79" />
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -350,7 +350,7 @@
           </p>
           <button class="article__continue-reading">Читать далее</button>
         </div>
-        <img class="article__image" src="./blocks/article/img/CPS_Picture.png" alt="Our wall logo" />
+        <img class="article__image" src="./blocks/article/img/CPS_Picture.png" alt="Our wall logo">
       </div>
 
       <div class="brand-showcase">
@@ -364,7 +364,7 @@
               <div class="swiper-slide">
                 <div class="swiper-slide__content">
                   <div class="swiper-slide__image">
-                    <img src="./blocks/scroller/img/Lenovo.png" alt="Company logo" />
+                    <img src="./blocks/scroller/img/Lenovo.png" alt="Company logo" >
                   </div>
 
                   <a href="#" class="swiper-slide__site-link">
@@ -381,7 +381,7 @@
               <div class="swiper-slide">
                 <div class="swiper-slide__content">
                   <div class="swiper-slide__image">
-                    <img src="./blocks/scroller/img/Samsung.png" alt="Company logo" />
+                    <img src="./blocks/scroller/img/Samsung.png" alt="Company logo" >
                   </div>
                   <a href="#" class="swiper-slide__site-link">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -397,7 +397,7 @@
               <div class="swiper-slide">
                 <div class="swiper-slide__content">
                   <div class="swiper-slide__image">
-                    <img src="./blocks/scroller/img/Apple.png" alt="Company logo" />
+                    <img src="./blocks/scroller/img/Apple.png" alt="Company logo" >
                   </div>
                   <a href="#" class="swiper-slide__site-link">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -413,7 +413,7 @@
               <div class="swiper-slide">
                 <div class="swiper-slide__content">
                   <div class="swiper-slide__image">
-                    <img src="./blocks/scroller/img/ViewSonic.png" alt="Company logo" />
+                    <img src="./blocks/scroller/img/ViewSonic.png" alt="Company logo" >
                   </div>
                   <a href="#" class="swiper-slide__site-link">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -429,7 +429,7 @@
               <div class="swiper-slide">
                 <div class="swiper-slide__content">
                   <div class="swiper-slide__image">
-                    <img src="./blocks/scroller/img/Bosh.png" alt="Company logo" />
+                    <img src="./blocks/scroller/img/Bosh.png" alt="Company logo" >
                   </div>
                   <a href="#" class="swiper-slide__site-link">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -445,7 +445,7 @@
               <div class="swiper-slide">
                 <div class="swiper-slide__content">
                   <div class="swiper-slide__image">
-                    <img src="./blocks/scroller/img/HP.png" alt="Company logo" />
+                    <img src="./blocks/scroller/img/HP.png" alt="Company logo" >
                   </div>
                   <a href="#" class="swiper-slide__site-link">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -461,7 +461,7 @@
               <div class="swiper-slide">
                 <div class="swiper-slide__content">
                   <div class="swiper-slide__image">
-                    <img src="./blocks/scroller/img/Acer.png" alt="Company logo" />
+                    <img src="./blocks/scroller/img/Acer.png" alt="Company logo" >
                   </div>
                   <a href="#" class="swiper-slide__site-link">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -477,7 +477,7 @@
               <div class="swiper-slide">
                 <div class="swiper-slide__content">
                   <div class="swiper-slide__image">
-                    <img src="./blocks/scroller/img/Sony.png" alt="Company logo" />
+                    <img src="./blocks/scroller/img/Sony.png" alt="Company logo" >
                   </div>
                   <a href="#" class="swiper-slide__site-link">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -493,7 +493,7 @@
               <div class="swiper-slide">
                 <div class="swiper-slide__content">
                   <div class="swiper-slide__image">
-                    <img src="./blocks/scroller/img/Lenovo.png" alt="Company logo" />
+                    <img src="./blocks/scroller/img/Lenovo.png" alt="Company logo" >
                   </div>
 
                   <a href="#" class="swiper-slide__site-link">
@@ -510,7 +510,7 @@
               <div class="swiper-slide">
                 <div class="swiper-slide__content">
                   <div class="swiper-slide__image">
-                    <img src="./blocks/scroller/img/Samsung.png" alt="Company logo" />
+                    <img src="./blocks/scroller/img/Samsung.png" alt="Company logo">
                   </div>
                   <a href="#" class="swiper-slide__site-link">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -525,7 +525,7 @@
             </div>
             <div class="swiper-pagination"></div>
 
-            <button id="show_more_brands" role="button" class="swiper__show-more-button">
+            <button id="show_more_brands" class="swiper__show-more-button">
               Показать все
             </button>
           </div>
@@ -627,7 +627,7 @@
             </div>
             <div class="swiper-pagination"></div>
 
-            <button id="show_more_services" role="button" class="swiper__show-more-button">
+            <button id="show_more_services" class="swiper__show-more-button">
               Показать все
             </button>
           </div>
