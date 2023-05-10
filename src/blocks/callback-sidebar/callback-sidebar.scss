@@ -1,3 +1,5 @@
+@import "../../default/variables.scss";
+
 .callback-sidebar {
     position: fixed;
     z-index: 4;
@@ -71,7 +73,7 @@
           position: absolute;
           width: 4px;
           height: 40px;
-          background-color: #3DE7CA;
+          background-color: $text-button-background;
           border-radius: 4px;
           left: -2px;
           transform: translateY(-4px);
@@ -116,11 +118,11 @@
     }
   
     &__assignment {
-      color: #7E7E82;
+      color: $grey-text;
     }
   
     &__link {
-      color: #FF3E79;
+      color: $button-default-color;
   
       &:focus{
           outline: none;
@@ -132,7 +134,7 @@
       box-sizing: border-box;
       width: 136px;
       height: 32px;
-      background-color:#FF3E79;
+      background-color:$button-default-color;
       border-radius: 20px;
       text-align: start;
       font-size: 12px;
@@ -154,12 +156,12 @@
       }
       
       &:hover{
-          background-color: #d93667;
+          background-color: $button-active-color;
           cursor: pointer;
       }
       
       &:focus{
-          outline: 3px solid #a92a50;
+          outline: 3px solid $button-active-color;
       }
   
       &:active{
