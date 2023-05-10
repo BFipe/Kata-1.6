@@ -40,7 +40,7 @@
     }
 
     &:focus {
-      outline: solid 2px #b8ffec;
+      outline: solid 2px $dividing-line;
       background-color: #ffffff;
     }
   }

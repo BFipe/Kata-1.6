@@ -49,7 +49,7 @@
     }
 
     &:focus {
-      outline: solid 2px #b8ffec;
+      outline: solid 2px $dividing-line;
       border-radius: 10px;
       background-color: #ffffff;
     }

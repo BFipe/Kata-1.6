@@ -22,9 +22,13 @@
       width: 8px;
       height: 40px;
       position: absolute;
-      left: -4px;
-      transform: translateY(-6px);
+      transform: translate(-36px, -6px);
       border-radius: 4px;
+
+      @media screen and (max-width: $laptop-screen) {
+        left: -4px;
+        transform: translate(0px, -6px);
+      }
     }
   }
 
@@ -74,7 +78,7 @@
   }
 
   &:focus {
-    outline: solid 2px #b8ffec;
+    outline: solid 2px $dividing-line;
     background-color: #ffffff;
   }
 

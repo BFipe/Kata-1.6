@@ -31,7 +31,8 @@
     align-items: center;
 
     @media screen and (max-width: $laptop-screen) {
-      width: 232px;
+      width: 165px;
+      justify-content: space-between;
 
       &::after {
         content: "";
@@ -40,13 +41,12 @@
         border-radius: 1px;
         height: 32px;
         position: absolute;
-        left: 102px;
+        left: 70px;
       }
     }
 
     @media screen and (max-width: $mobile-screen) {
-      width: 175px;
-      padding-left: 8px;
+      width: 175px;  
 
       &::after {
         content: "";

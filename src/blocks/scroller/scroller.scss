@@ -11,8 +11,17 @@
     margin: 0 auto;
 
     &__header {
-      background-color: $swiper-header-color;
+      background: linear-gradient(to right, $background-color, $swiper-header-color 40%);
       margin-bottom: 16px;
+
+      &::before {
+        content: "";
+        width: 100vw;
+        height: 1px;
+        background-color: $dividing-line;
+        position: absolute;
+        left: 0px;
+      }
     }
 
     &__info {
@@ -26,7 +35,7 @@
       padding: 16px 0;
       color: $grey-text;
       text-transform: uppercase;
-      box-shadow: $swiper-header-color 50vw 0px, $swiper-header-color -50vw 0px;
+      box-shadow: $swiper-header-color 50vw 0px;
     }
 
     &__show-more-button {
@@ -50,7 +59,7 @@
       }
 
       &:focus {
-        outline: solid 2px #b8ffec;
+        outline: solid 2px $dividing-line;
         background-color: #ffffff;
       }
 
@@ -169,7 +178,7 @@
     transform: rotate(180deg);
   }
 
-  @media screen and (max-width: $desktop-screen) {
+  @media screen and (max-width: $desktop-screen - 1px) {
     .swiper-brands {
       width: 720px;
     }

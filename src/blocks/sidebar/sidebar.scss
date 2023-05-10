@@ -64,6 +64,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 50vh;
+  max-height: 350px;
 
   &__service {
     font-weight: normal;
@@ -116,8 +117,6 @@
 
 .sidebar__footer {
   margin-top: 100px;
-  position: sticky;
-  top: 40vh;
 
   @media screen and (max-width: $laptop-screen) {
     margin: 0;
@@ -221,4 +220,10 @@
       fill: #a83b5b;
     }
   }
+}
+
+.sidebar-sticky{
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }

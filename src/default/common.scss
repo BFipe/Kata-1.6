@@ -5,6 +5,8 @@ body{
 
 .content-container{
     display: flex;
+    max-width: 1439px;
+    margin: 0 auto;
 
     @media screen and (max-width: $laptop-screen) {
         display: block;
