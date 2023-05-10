@@ -1,3 +1,5 @@
+import './blocks/article/js/show-more-button.js'
+
 import './blocks/scroller/js/scroller.js'
 import './blocks/scroller/js/show_more_button.js'
 

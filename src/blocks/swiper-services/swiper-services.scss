@@ -1,5 +1,5 @@
-.swiper-services{
-    text-align: start;
+.swiper-services {
+  text-align: start;
 }
 
 :root {
@@ -15,8 +15,21 @@
     margin: 0 auto;
 
     &__header {
-      background-color: $swiper-header-color;
+      background: linear-gradient(
+        to right,
+        $background-color,
+        $swiper-header-color 40%
+      );
       margin-bottom: 16px;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $dividing-line;
+        position: absolute;
+        left: 0px;
+      }
     }
 
     &__info {
@@ -30,7 +43,7 @@
       padding: 16px 0;
       color: $grey-text;
       text-transform: uppercase;
-      box-shadow: $swiper-header-color 50vw 0px, $swiper-header-color -50vw 0px;
+      box-shadow: $swiper-header-color 50vw 0px;
     }
 
     &__show-more-button {
@@ -54,7 +67,7 @@
       }
 
       &:focus {
-        outline: solid 2px #b8ffec;
+        outline: solid 2px $dividing-line;
         background-color: #ffffff;
       }
 
@@ -85,12 +98,6 @@
     align-items: center;
     width: auto;
     transform-origin: top center;
-    transition: transform 0.5s;
-    transform: scale(1);
-
-    &:hover {
-      transform: scale(1.05);
-    }
 
     &__content {
       background: #ffffff;
@@ -105,7 +112,7 @@
       align-items: center;
       text-align: start;
 
-      p{
+      p {
         font-size: 16px;
         margin: 0;
         align-self: flex-start;
@@ -181,7 +188,7 @@
     transform: rotate(180deg);
   }
 
-  @media screen and (max-width: $desktop-screen) {
+  @media screen and (max-width: $desktop-screen - 1px) {
     .swiper-services {
       width: 720px;
     }
@@ -209,16 +216,6 @@
     }
 
     .swiper-services {
-      &::before {
-        content: "";
-        position: absolute;
-        height: 163px;
-        width: 20px;
-        background-image: linear-gradient(to right, #f8f8f8, #f8f8f800);
-        left: 0;
-        top: 0;
-        z-index: 2;
-      }
 
       &::after {
         content: "";
@@ -232,14 +229,15 @@
       }
     }
 
-    .swiper-container {
-      padding: 0 16px;
-    }
 
     .swiper-wrapper {
       justify-content: start;
       flex-wrap: nowrap;
       gap: 0;
+
+      @media screen and (max-width: 370px) {
+        padding-left: 100px;
+      }
     }
 
     .swiper-services {

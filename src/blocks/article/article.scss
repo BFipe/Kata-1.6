@@ -32,6 +32,12 @@
       margin-right: 5px;
       position: relative;
       bottom: 3px;
+
+    }
+    &.activated {
+      &::before {
+      transform: rotate(180deg) translate(-6px, -5px);
+    }
     }
 
     &:hover {
@@ -40,7 +46,7 @@
     }
 
     &:focus {
-      outline: solid 2px #b8ffec;
+      outline: solid 2px $dividing-line;
       background-color: #ffffff;
     }
   }
@@ -92,4 +98,8 @@
       margin-left: 0;
     }
   }
+}
+
+.hidden{
+  display: none;
 }

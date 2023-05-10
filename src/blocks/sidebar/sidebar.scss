@@ -64,6 +64,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 50vh;
+  max-height: 350px;
 
   &__service {
     font-weight: normal;
@@ -77,7 +78,6 @@
 
     &:focus {
       outline: none;
-      text-decoration: underline;
     }
 
     &:active {
@@ -116,8 +116,6 @@
 
 .sidebar__footer {
   margin-top: 100px;
-  position: sticky;
-  top: 40vh;
 
   @media screen and (max-width: $laptop-screen) {
     margin: 0;
@@ -174,11 +172,11 @@
     &:hover {
       color: #ababab;
       cursor: pointer;
+      text-decoration: underline;
     }
 
     &:focus {
       outline: none;
-      text-decoration: underline;
     }
 
     &:active {
@@ -221,4 +219,10 @@
       fill: #a83b5b;
     }
   }
+}
+
+.sidebar-sticky{
+  height: 100vh;
+  position: sticky;
+  top: 10px;
 }
