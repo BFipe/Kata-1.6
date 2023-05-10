@@ -194,7 +194,7 @@
     transform: rotate(180deg);
   }
 
-  @media screen and (max-width: $desktop-screen) {
+  @media screen and (max-width: $desktop-screen - 1px) {
     .swiper-services {
       width: 720px;
     }

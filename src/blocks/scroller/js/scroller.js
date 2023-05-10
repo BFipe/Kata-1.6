@@ -13,10 +13,6 @@ function swiperCard() {
       init = true;
 
       swiper = new Swiper('.swiper-brands', {
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
         direction: 'horizontal',
         slidesPerView: 2,
         centeredSlides: true,

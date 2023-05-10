@@ -78,7 +78,6 @@
 
     &:focus {
       outline: none;
-      text-decoration: underline;
     }
 
     &:active {
@@ -173,11 +172,11 @@
     &:hover {
       color: #ababab;
       cursor: pointer;
+      text-decoration: underline;
     }
 
     &:focus {
       outline: none;
-      text-decoration: underline;
     }
 
     &:active {
@@ -225,5 +224,5 @@
 .sidebar-sticky{
   height: 100vh;
   position: sticky;
-  top: 0;
+  top: 10px;
 }
