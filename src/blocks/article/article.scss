@@ -32,6 +32,12 @@
       margin-right: 5px;
       position: relative;
       bottom: 3px;
+
+    }
+    &.activated {
+      &::before {
+      transform: rotate(180deg) translate(-6px, -5px);
+    }
     }
 
     &:hover {
@@ -92,4 +98,8 @@
       margin-left: 0;
     }
   }
+}
+
+.hidden{
+  display: none;
 }
