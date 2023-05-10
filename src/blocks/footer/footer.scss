@@ -6,7 +6,7 @@
     white-space: break-spaces;
     margin-top: 40px; 
     p{
-        color: #7E7E82;
+        color: $grey-text;
         margin: 0;
         margin-bottom: 16px;
         
@@ -19,7 +19,7 @@
         }
         
         a{
-            color: #7E7E82;
+            color: $grey-text;
             
             &:hover{
                 color: black;

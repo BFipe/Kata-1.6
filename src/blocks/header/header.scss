@@ -108,7 +108,7 @@
   height: 40px;
   padding: 0;
   border: none;
-  background-color: #ffffff00;
+  background-color: transparent;
   text-decoration: none;
   margin: auto 0;
 
@@ -131,6 +131,6 @@
   }
 
   svg:hover rect {
-    fill: #a83b5b;
+    fill: $button-active-color;
   }
 }

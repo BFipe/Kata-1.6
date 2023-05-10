@@ -9,7 +9,7 @@ $tbody-border: 10px;
   border-spacing: 0;
 
   thead {
-    color: #7e7e82;
+    color: $grey-text;
   }
 
   &__button-cell {
@@ -19,7 +19,7 @@ $tbody-border: 10px;
   &__button {
     box-sizing: border-box;
     padding: 4px 40px 4px 12px;
-    background-color: #ff3e79;
+    background-color: $button-default-color;
     border-radius: 20px;
     position: static;
     width: 119px;
@@ -42,7 +42,7 @@ $tbody-border: 10px;
     }
 
     &:hover {
-      background-color: #cd305f;
+      background-color: $button-active-color;
       cursor: pointer;
     }
 
