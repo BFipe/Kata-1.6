@@ -27,7 +27,7 @@ function swiperCard() {
           // when window width is >= 0px
           0: {
             slidesPerView: 2,
-            spaceBetween: 200,
+            spaceBetween: 220,
             initialSlide: 0,
             centeredSlides: false,
           },

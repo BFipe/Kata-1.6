@@ -98,12 +98,6 @@
     align-items: center;
     width: auto;
     transform-origin: top center;
-    transition: transform 0.5s;
-    transform: scale(1);
-
-    &:hover {
-      transform: scale(1.05);
-    }
 
     &__content {
       background: #ffffff;
@@ -222,16 +216,6 @@
     }
 
     .swiper-services {
-      &::before {
-        content: "";
-        position: absolute;
-        height: 163px;
-        width: 20px;
-        background-image: linear-gradient(to right, #f8f8f8, #f8f8f800);
-        left: 0;
-        top: 0;
-        z-index: 2;
-      }
 
       &::after {
         content: "";
@@ -245,14 +229,15 @@
       }
     }
 
-    .swiper-container {
-      padding: 0 16px;
-    }
 
     .swiper-wrapper {
       justify-content: start;
       flex-wrap: nowrap;
       gap: 0;
+
+      @media screen and (max-width: 370px) {
+        padding-left: 100px;
+      }
     }
 
     .swiper-services {
